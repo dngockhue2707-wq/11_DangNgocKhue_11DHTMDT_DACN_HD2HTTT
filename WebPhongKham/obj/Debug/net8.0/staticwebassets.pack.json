@@ -1,679 +1,503 @@
 {
   "Files": [
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebPhongKham.bundle.scp.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebPhongKham.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebPhongKham.bundle.scp.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\css\\admin.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\css\\maps\\style.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\css\\maps\\style.css.map",
       "PackagePath": "staticwebassets\\css\\maps\\style.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\css\\style.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\favicon.ico",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\05.png",
-      "PackagePath": "staticwebassets\\images\\about\\05.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\1.png",
-      "PackagePath": "staticwebassets\\images\\about\\1.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\2.png",
-      "PackagePath": "staticwebassets\\images\\about\\2.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\3.png",
-      "PackagePath": "staticwebassets\\images\\about\\3.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\4.png",
-      "PackagePath": "staticwebassets\\images\\about\\4.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\5.png",
-      "PackagePath": "staticwebassets\\images\\about\\5.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\6.png",
-      "PackagePath": "staticwebassets\\images\\about\\6.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\about-1.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\about-1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\about-2.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\about-2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\about-3.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\about-3.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\about-4.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\about-4.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\img-1.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\img-1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\img-2.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\img-2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\img-3.jpg",
-      "PackagePath": "staticwebassets\\images\\about\\img-3.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\about\\sign.png",
-      "PackagePath": "staticwebassets\\images\\about\\sign.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\bg\\22.jpg",
-      "PackagePath": "staticwebassets\\images\\bg\\22.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\bg\\banner.jpg",
-      "PackagePath": "staticwebassets\\images\\bg\\banner.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\bg\\bg-2.jpg",
-      "PackagePath": "staticwebassets\\images\\bg\\bg-2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\bg\\bg-4.jpg",
-      "PackagePath": "staticwebassets\\images\\bg\\bg-4.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\bg\\slider-bg-1.jpg",
-      "PackagePath": "staticwebassets\\images\\bg\\slider-bg-1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\blog-1.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\blog-1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\blog-2.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\blog-2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\blog-4.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\blog-4.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\blog-6.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\blog-6.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\blog-7.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\blog-7.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\blog-8.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\blog-8.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\testimonial1.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\testimonial1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\blog\\testimonial2.jpg",
-      "PackagePath": "staticwebassets\\images\\blog\\testimonial2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\chung.jpg",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\chung.jpg",
       "PackagePath": "staticwebassets\\images\\chung.jpg"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\dat.jpg",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\dat.jpg",
       "PackagePath": "staticwebassets\\images\\dat.jpg"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\logo.png",
-      "PackagePath": "staticwebassets\\images\\logo.png"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\nam.jpg",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\nam.jpg",
       "PackagePath": "staticwebassets\\images\\nam.jpg"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\nen.jpg",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\nen.jpg",
       "PackagePath": "staticwebassets\\images\\nen.jpg"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\nu.jpg",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\nu.jpg",
       "PackagePath": "staticwebassets\\images\\nu.jpg"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\bg-1.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\bg-1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\service-1.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\service-1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\service-2.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\service-2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\service-3.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\service-3.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\service-4.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\service-4.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\service-6.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\service-6.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\service\\service-8.jpg",
-      "PackagePath": "staticwebassets\\images\\service\\service-8.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\1.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\2.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\3.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\3.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\4.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\4.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\test-thumb1.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\test-thumb1.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\test-thumb2.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\test-thumb2.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\test-thumb3.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\test-thumb3.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\images\\team\\test-thumb4.jpg",
-      "PackagePath": "staticwebassets\\images\\team\\test-thumb4.jpg"
-    },
-    {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\js\\contact.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\js\\contact.js",
       "PackagePath": "staticwebassets\\js\\contact.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\js\\script.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\css\\bootstrap.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\plugins\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\js\\popper.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\bootstrap\\js\\popper.js",
       "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\popper.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\counterup\\jquery.counterup.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\counterup\\jquery.counterup.min.js",
       "PackagePath": "staticwebassets\\plugins\\counterup\\jquery.counterup.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\counterup\\jquery.easing.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\counterup\\jquery.easing.js",
       "PackagePath": "staticwebassets\\plugins\\counterup\\jquery.easing.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\counterup\\jquery.waypoints.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\counterup\\jquery.waypoints.min.js",
       "PackagePath": "staticwebassets\\plugins\\counterup\\jquery.waypoints.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\google-map\\map.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\google-map\\map.js",
       "PackagePath": "staticwebassets\\plugins\\google-map\\map.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\demo.html",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\demo.html",
       "PackagePath": "staticwebassets\\plugins\\icofont\\demo.html"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.eot",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.eot",
       "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.eot"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.ttf",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.ttf",
       "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.ttf"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.woff",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.woff",
       "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.woff"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.woff2",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\fonts\\icofont.woff2",
       "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.woff2"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\icofont.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\icofont.css",
       "PackagePath": "staticwebassets\\plugins\\icofont\\icofont.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\icofont.min.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\icofont\\icofont.min.css",
       "PackagePath": "staticwebassets\\plugins\\icofont\\icofont.min.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\jquery\\jquery.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\jquery\\jquery.js",
       "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\shuffle\\shuffle.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\shuffle\\shuffle.min.js",
       "PackagePath": "staticwebassets\\plugins\\shuffle\\shuffle.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\ajax-loader.gif",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\config.rb",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\config.rb",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\config.rb"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.eot",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.eot"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.svg",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.svg",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.svg"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.ttf",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.ttf"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.woff",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.woff"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.css",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick-theme.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.less",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.less",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick-theme.less"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.scss",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick-theme.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.css",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.css",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.css"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.js",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.less",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.less",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.less"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.min.js",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.min.js",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.min.js"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\plugins\\slick-carousel\\slick\\slick.scss",
       "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_color.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_color.scss",
       "PackagePath": "staticwebassets\\scss\\_color.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_common.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_common.scss",
       "PackagePath": "staticwebassets\\scss\\_common.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_media-query.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_media-query.scss",
       "PackagePath": "staticwebassets\\scss\\_media-query.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_mixins.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_mixins.scss",
       "PackagePath": "staticwebassets\\scss\\_mixins.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_typography.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_typography.scss",
       "PackagePath": "staticwebassets\\scss\\_typography.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_variables.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\_variables.scss",
       "PackagePath": "staticwebassets\\scss\\_variables.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\style.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\style.scss",
       "PackagePath": "staticwebassets\\scss\\style.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_about.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_about.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_about.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_backgrounds.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_backgrounds.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_backgrounds.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_blog-sidebar.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_blog-sidebar.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_blog-sidebar.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_blog.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_blog.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_blog.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_contact.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_contact.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_contact.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_counter.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_counter.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_counter.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_cta.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_cta.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_cta.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_department.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_department.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_department.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_feature.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_feature.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_feature.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_footer.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_footer.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_footer.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_header.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_header.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_header.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_navigation.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_navigation.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_navigation.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_portfolio.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_portfolio.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_portfolio.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_review.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_review.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_review.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_service.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_service.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_service.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_single-post.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_single-post.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_single-post.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_slider.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_slider.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_slider.scss"
     },
     {
-      "Id": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_team.scss",
+      "Id": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\wwwroot\\scss\\templates\\_team.scss",
       "PackagePath": "staticwebassets\\scss\\templates\\_team.scss"
     },
     {

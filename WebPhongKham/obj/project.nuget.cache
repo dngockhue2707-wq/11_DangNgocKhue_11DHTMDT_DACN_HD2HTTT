@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ONUn3G2daigPEFI42tZeD/YgbB+dSAE5Q1U8RDyjgmPKm5CuVSZiXOynrLiXCmV+IHOu4pXFvEBo5EH54TGMbQ==",
+  "dgSpecHash": "Yk7obj7hNgNDWeC8riU91fCfAshiDDjlD8aqJU6s5vwDgYUgVFk0hQAv2VJOAmuVXalGv0lxU2IiaDKWTD0UvA==",
   "success": true,
-  "projectFilePath": "D:\\HK2_2025_nam3\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj",
+  "projectFilePath": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

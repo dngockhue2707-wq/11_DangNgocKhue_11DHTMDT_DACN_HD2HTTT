@@ -19,5 +19,6 @@ using System.ComponentModel.DataAnnotations.Schema;
             public string? NguoiHuy { get; set; }
             public string? PhieuKham { get; set; }
             public string? LyDoKham { get; set; }
+            public BenhNhan BenhNhan { get; set; }
         }
     }

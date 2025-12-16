@@ -9,135 +9,135 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebPhongKham
 build_property.RootNamespace = WebPhongKham
-build_property.ProjectDir = D:\HK2_2025_nam3\doanchuyennganh\Webdatlich\WebPhongKham\
+build_property.ProjectDir = D:\HK2_2025_nam4\doanchuyennganh\Webdatlich\WebPhongKham\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\HK2_2025_nam3\doanchuyennganh\Webdatlich\WebPhongKham
+build_property.MSBuildProjectDirectory = D:\HK2_2025_nam4\doanchuyennganh\Webdatlich\WebPhongKham
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Account/HoSo.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Account/HoSo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxIb1NvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Account/Login.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Account/Register.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/BacSi.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/BacSi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmFjU2kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/DanhSachLich.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/DanhSachLich.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFuaFNhY2hMaWNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/Dashboard.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/LichLamViec.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/LichLamViec.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGljaExhbVZpZWMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/NgayNghi.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/NgayNghi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmdheU5naGkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/NguoiDung.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/NguoiDung.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmd1b2lEdW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/SuaBacSi.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/SuaBacSi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3VhQmFjU2kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/SuaNguoiDung.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Admin/SuaNguoiDung.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3VhTmd1b2lEdW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/BacSiDashboard/LichKham.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/BacSiDashboard/LichKham.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjU2lEYXNoYm9hcmRcTGljaEtoYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/BacSi/Details.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/BacSi/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjU2lcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/BacSi/Index.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/BacSi/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjU2lcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/BenhNhan/HuyThanhCong.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/BenhNhan/HuyThanhCong.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuaE5oYW5cSHV5VGhhbmhDb25nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/BenhNhan/LichHen.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/BenhNhan/LichHen.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuaE5oYW5cTGljaEhlbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/BenhNhan/TraCuu.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/BenhNhan/TraCuu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuaE5oYW5cVHJhQ3V1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/DatLich/Index.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/DatLich/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0TGljaFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/DatLich/PhieuKham.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/DatLich/PhieuKham.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0TGljaFxQaGlldUtoYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/DatLich/ThanhCong.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/DatLich/ThanhCong.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0TGljaFxUaGFuaENvbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Home/Index.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Home/Privacy.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/Error.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/_AdminLayout.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/SMS/Index.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/SMS/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU01TXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/ThongBao/ChiTiet.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/ThongBao/ChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9cQ2hpVGlldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/ThongBao/Index.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/ThongBao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/_ViewImports.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/_ViewStart.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HK2_2025_nam3/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/_Layout.cshtml]
+[D:/HK2_2025_nam4/doanchuyennganh/Webdatlich/WebPhongKham/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-69o7lp3nh0

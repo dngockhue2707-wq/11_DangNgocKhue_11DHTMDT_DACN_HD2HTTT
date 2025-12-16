@@ -40,6 +40,10 @@ namespace WebPhongKham.Data
             modelBuilder.Entity<LichHen>()
                 .ToTable("LichHen", tb => tb.HasTrigger("TRG_LichHen"))
                 .HasKey(x => x.IdLichHen);
+            modelBuilder.Entity<LichHen>()
+                .HasOne(x => x.BenhNhan)
+                .WithMany()
+                .HasForeignKey(x => x.IdBenhNhan);
 
             modelBuilder.Entity<SMS_Log>().ToTable("SMS_Log").HasKey(x => x.Id);
         }

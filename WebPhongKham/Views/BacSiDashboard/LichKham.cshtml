@@ -44,10 +44,11 @@
                 {
                     <tr>
                         <td>@lh.Gio</td>
-                        <td>BN @lh.IdBenhNhan</td>
+                        <td>@(lh.BenhNhan != null ? lh.BenhNhan.HoTen : "Không rõ")</td>
+
 
                         <td>
-                            <span class="badge 
+                            <span class="badge text-white fw-semibold px-3 py-2
                                 @(lh.TrangThai == "Đã đặt" ? "bg-primary" :
                                   lh.TrangThai == "Đã khám" ? "bg-success" :
                                   lh.TrangThai == "Đã hủy"  ? "bg-danger" : "bg-secondary")">
@@ -58,28 +59,23 @@
                         <td>@lh.LyDoKham</td>
 
                         <td>
-                            @* Nếu lịch đã bị hủy *@
                             @if (lh.TrangThai == "Đã hủy")
                             {
                                 <span class="text-muted">Đã hủy</span>
                             }
-                            @* Nếu lịch đã khám *@
                             else if (lh.TrangThai == "Đã khám")
                             {
                                 <span class="text-success fw-bold">Đã khám xong</span>
                             }
-                            @* Nếu lịch đang ở trạng thái Đã đặt *@
                             else
                             {
                                 <div class="d-flex gap-2">
 
-                                    @* Nút ĐÃ KHÁM *@
                                     <form method="post" action="/BacSiDashboard/DaKham">
                                         <input type="hidden" name="idLichHen" value="@lh.IdLichHen" />
                                         <button class="btn btn-success btn-sm">Đã khám</button>
                                     </form>
 
-                                    @* Nút HỦY LỊCH *@
                                     <form method="post" action="/BacSiDashboard/HuyLich"
                                           onsubmit="return confirm('Bạn chắc chắn muốn hủy lịch này?');">
                                         <input type="hidden" name="idLichHen" value="@lh.IdLichHen" />

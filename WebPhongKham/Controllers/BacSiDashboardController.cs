@@ -24,6 +24,7 @@ namespace WebPhongKham.Controllers
 
             var list = await _context.LichHens
                 .AsNoTracking()
+                    .Include(x => x.BenhNhan)
                 .Where(x => x.IdBacSi == idBacSi.Value && x.Ngay.Date == date.Date)
                 .OrderBy(x => x.Gio)
                 .ToListAsync();
