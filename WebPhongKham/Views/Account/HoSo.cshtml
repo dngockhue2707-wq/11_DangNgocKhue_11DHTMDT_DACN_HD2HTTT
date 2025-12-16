@@ -1,0 +1,76 @@
+@model dynamic
+@{
+    Layout = "_Layout";
+    var role = Context.Session.GetString("VaiTro") ?? "";
+}
+
+<div class="container mt-5" style="max-width:700px;">
+    <h3 class="text-center mb-4">Hồ sơ tài khoản</h3>
+
+    <div class="card shadow-sm p-4">
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Email đăng nhập</label>
+            <input class="form-control" value="@(Model?.Email ?? "")" readonly />
+        </div>
+
+        @if (role == "User")
+        {
+            <hr />
+            <h5 class="text-primary">🩺 Thông tin bệnh nhân</h5>
+
+            <div class="mb-3">
+                <label>Họ tên</label>
+                <input class="form-control" value="@(Model?.HoTen ?? "")" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Số điện thoại</label>
+                <input class="form-control" value="@(Model?.SDT ?? "")" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Địa chỉ</label>
+                <input class="form-control" value="@(Model?.DiaChi ?? "")" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Giới tính</label>
+                <input class="form-control" value="@(Model?.GioiTinh ?? "")" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Ngày sinh</label>
+                <input class="form-control"
+                       value="@(Model?.NgaySinh != null ? ((DateTime)Model.NgaySinh).ToString("dd/MM/yyyy") : "")"
+                       readonly />
+            </div>
+        }
+
+        @if (role == "BacSi")
+        {
+            <hr />
+            <h5 class="text-success">👨‍⚕️ Thông tin bác sĩ</h5>
+
+            <div class="mb-3">
+                <label>Tên bác sĩ</label>
+                <input class="form-control" value="@(Model?.TenBacSi ?? "")" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Chuyên khoa</label>
+                <input class="form-control" value="@(Model?.ChuyenKhoa ?? "")" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Kinh nghiệm</label>
+                <input class="form-control" value="@(Model?.KinhNghiem ?? 0) năm" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label>Mô tả</label>
+                <textarea class="form-control" rows="3" readonly>@(Model?.MoTa ?? "")</textarea>
+            </div>
+        }
+    </div>
+</div>

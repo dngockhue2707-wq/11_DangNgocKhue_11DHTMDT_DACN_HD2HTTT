@@ -1,0 +1,268 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Microsoft.EntityFrameworkCore
+@using WebPhongKham.Data
+@inject ClinicDbContext Db
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    string? role = HttpContextAccessor.HttpContext?.Session.GetString("VaiTro");
+    string? name = HttpContextAccessor.HttpContext?.Session.GetString("Email");
+
+    var chuyenKhoas = await Db.BacSis
+        .AsNoTracking()
+        .Where(x => x.ChuyenKhoa != null && x.ChuyenKhoa != "")
+        .Select(x => x.ChuyenKhoa!)
+        .Distinct()
+        .OrderBy(x => x)
+        .ToListAsync();
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+  <meta name="author" content="themefisher.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Đặt lịch hẹn khám bệnh</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico" />
+
+  <link rel="stylesheet" href="~/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="~/plugins/icofont/icofont.min.css">
+
+  <link rel="stylesheet" href="~/plugins/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="~/plugins/slick-carousel/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="~/css/style.css">
+</head>
+
+<body id="top">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navigation" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand" href="/">
+                <h2 class="fw-bold m-0" style="color: rgb(0, 123, 255); letter-spacing: 2px;">DNK</h2>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarmain"
+                    aria-controls="navbarmain"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarmain">
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/BacSi" data-bs-toggle="dropdown">
+                            Bác sĩ
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach (var ck in chuyenKhoas)
+                            {
+                                <li>
+                                    <a class="dropdown-item" href="/BacSi?ck=@ck">@ck</a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/DatLich/Index">Đặt lịch</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/BenhNhan/TraCuu">Tra cứu lịch</a>
+                    </li>
+
+                    @{
+                        var r = Context.Session.GetString("VaiTro");
+                        var hoTen = Context.Session.GetString("Email");
+                    }
+
+                    @if (r == null)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Login">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Register">Đăng ký</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">
+                                Xin chào, @hoTen
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                @if (r == "User")
+                                {
+                                    <li><a class="dropdown-item" href="~/BenhNhan/LichHen">📋 Lịch sử khám</a></li>
+                                    <li><a class="dropdown-item" href="~/ThongBao/Index">🔔 Thông báo</a></li>
+                                    <li><a class="dropdown-item" href="~/Account/HoSo">👤 Hồ sơ cá nhân</a></li>
+                                }
+
+                                @if (r == "BacSi")
+                                {
+                                    <li><a class="dropdown-item" href="/BacSiDashboard/LichKham">🩺 Lịch hẹn</a></li>
+                                    <li><a class="dropdown-item" href="/Account/HoSo">👨‍⚕️ Hồ sơ cá nhân</a></li>
+                                }
+
+                                @if (r == "Admin")
+                                {
+                                    <li><a class="dropdown-item" href="/Admin/Dashboard">⚙️ Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="/Admin/NguoiDung">👥 Quản lý người dùng</a></li>
+                                }
+
+                                <li><hr class="dropdown-divider" /></li>
+
+                                <li>
+                                    <a class="dropdown-item text-danger fw-bold" href="/Account/Logout">🚪 Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-4 mb-5">
+    @RenderBody()
+</div>
+
+<footer class="footer section gray-bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 mr-auto col-sm-6">
+                <div class="widget mb-5 mb-lg-0">
+                    <div class="logo mb-4">
+                        <h3 class="fw-bold text-primary m-0">DNK</h3>
+                    </div>
+                    <p>
+                        DNK Clinic là hệ thống đặt lịch khám thông minh, cho phép bệnh nhân
+                        lựa chọn khung giờ nhanh chóng – chính xác – tiện lợi.
+                        Chúng tôi cam kết mang đến trải nghiệm chăm sóc sức khỏe tốt nhất.
+                    </p>
+
+                    <ul class="list-inline footer-socials mt-4">
+                        <li class="list-inline-item"><a href="#"><i class="icofont-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="icofont-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="icofont-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="widget mb-5 mb-lg-0">
+                    <h4 class="text-capitalize mb-3">Chuyên khoa</h4>
+                    <div class="divider mb-4"></div>
+
+                    <ul class="list-unstyled footer-menu lh-35">
+                        <li><a href="#">Nội tổng quát</a></li>
+                        <li><a href="#">Nhi khoa</a></li>
+                        <li><a href="#">Tai - Mũi - Họng</a></li>
+                        <li><a href="#">Răng - Hàm - Mặt</a></li>
+                        <li><a href="#">Tim mạch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="widget mb-5 mb-lg-0">
+                    <h4 class="text-capitalize mb-3">Hỗ trợ</h4>
+                    <div class="divider mb-4"></div>
+
+                    <ul class="list-unstyled footer-menu lh-35">
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Hướng dẫn đặt lịch</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="widget widget-contact mb-5 mb-lg-0">
+                    <h4 class="text-capitalize mb-3">Liên hệ</h4>
+                    <div class="divider mb-4"></div>
+
+                    <div class="footer-contact-block mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <i class="icofont-email mr-3"></i>
+                            <span class="h6 mb-0">Hỗ trợ 24/7</span>
+                        </div>
+                        <h4 class="mt-2">
+                            <a href="mailto:supportdnkclinic@gmail.com">supportdnkclinic@gmail.com</a>
+                        </h4>
+                    </div>
+
+                    <div class="footer-contact-block">
+                        <div class="icon d-flex align-items-center">
+                            <i class="icofont-support mr-3"></i>
+                            <span class="h6 mb-0">Giờ làm việc: Thứ 2 - Thứ 6</span>
+                        </div>
+                        <h4 class="mt-2">
+                            <a href="tel:0123456789">0123 456 789</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-btm py-4 mt-5">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-lg-6">
+                    <div class="copyright">
+                        © 2025 <span class="text-primary fw-bold">DNK Clinic</span> — Đặt lịch khám nhanh – chủ động từng khung giờ.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-lg-right">
+                    <a class="backtop js-scroll-trigger" href="#top">
+                        <i class="icofont-long-arrow-up"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="~/plugins/jquery/jquery.js"></script>
+<script src="~/plugins/bootstrap/js/popper.js"></script>
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/plugins/counterup/jquery.easing.js"></script>
+<script src="~/plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="~/plugins/counterup/jquery.waypoints.min.js"></script>
+<script src="~/plugins/shuffle/shuffle.min.js"></script>
+<script src="~/plugins/counterup/jquery.counterup.min.js"></script>
+<script src="~/plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+<script src="~/js/script.js"></script>
+<script src="~/js/contact.js"></script>
+
+@RenderSection("Scripts", required: false)
+
+</body>
+</html>

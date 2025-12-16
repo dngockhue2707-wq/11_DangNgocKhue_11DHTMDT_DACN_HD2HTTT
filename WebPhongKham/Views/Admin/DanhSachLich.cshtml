@@ -1,0 +1,62 @@
+@model List<WebPhongKham.Models.LichHen>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h3 class="text-center mb-4">📋 Tất cả lịch hẹn</h3>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-warning text-center">
+            Chưa có lịch hẹn nào.
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped align-middle">
+            <thead class="table-light text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Bệnh nhân</th>
+                    <th>Bác sĩ</th>
+                    <th>Ngày</th>
+                    <th>Giờ</th>
+                    <th>Trạng thái</th>
+                    <th>Lý do hủy</th>
+                    <th>Người hủy</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var lh in Model)
+                {
+                    <tr>
+                        <td class="text-center">@lh.IdLichHen</td>
+                        <td>@lh.TenBenhNhan</td>
+                        <td>@lh.TenBacSi</td>
+                        <td>@lh.Ngay.ToString("dd/MM/yyyy")</td>
+                        <td>@lh.Gio.ToString(@"hh\:mm")</td>
+                        <td class="text-center">
+                            <span class="badge text-white
+                                @(lh.TrangThai == "Đã hủy" ? "bg-danger" :
+                                  lh.TrangThai == "Đã khám" ? "bg-success" :
+                                  "bg-warning")">
+                                @lh.TrangThai
+                            </span>
+                        </td>
+                        <td>
+                            @(string.IsNullOrEmpty(lh.LyDoHuy) ? "-" : lh.LyDoHuy)
+                        </td>
+                        <td>
+                            @(string.IsNullOrEmpty(lh.NguoiHuy) ? "-" : lh.NguoiHuy)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <a href="/Admin/Dashboard" class="btn btn-secondary mt-3">⬅ Quay lại</a>
+</div>

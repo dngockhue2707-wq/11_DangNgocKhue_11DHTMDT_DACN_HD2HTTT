@@ -1,0 +1,49 @@
+@model WebPhongKham.Models.TaiKhoan
+
+<h3 class="mb-3">Sửa người dùng</h3>
+
+<form method="post" asp-action="SuaNguoiDung" class="card">
+    <div class="card-body">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input class="form-control" asp-for="Email" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Vai trò</label>
+            <select class="form-select" asp-for="VaiTro">
+                <option value="Admin">Admin</option>
+                <option value="BacSi">Bác sĩ</option>
+                <option value="User">User</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">IdBệnhNhân</label>
+            <input class="form-control" asp-for="IdBenhNhan" type="number" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">IdBácSĩ</label>
+            <input class="form-control" asp-for="IdBacSi" type="number" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Trạng thái</label>
+            <select class="form-select" asp-for="TrangThai">
+                <option value="1">Hoạt động</option>
+                <option value="0">Khóa</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mật khẩu mới (để trống nếu không đổi)</label>
+            <input class="form-control" asp-for="MatKhau" />
+        </div>
+
+        <button class="btn btn-primary">Lưu</button>
+        <a class="btn btn-secondary" asp-action="NguoiDung">Quay lại</a>
+    </div>
+</form>

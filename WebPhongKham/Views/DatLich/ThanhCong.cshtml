@@ -1,0 +1,33 @@
+@{
+    Layout = "_Layout";
+}
+
+@if (TempData["SMS"] != null)
+{
+    <script>
+        alert("📩 SMS gửi tới bệnh nhân:\n\n@TempData["SMS"]");
+    </script>
+}
+
+<div class="container mt-5 text-center">
+    <div class="card p-4 shadow-sm" style="max-width: 600px; margin: auto;">
+        <h3 class="text-success mb-3">🎉 Đặt lịch thành công!</h3>
+
+        <p class="mb-3">
+            Cảm ơn bạn đã đặt lịch tại phòng khám.<br />
+            Hệ thống đã gửi SMS xác nhận và sẽ nhắc lịch trước khi khám.
+        </p>
+
+        <div class="alert alert-info">
+            📲 Tin nhắn SMS đã được gửi đến số điện thoại của bạn.
+        </div>
+
+        <a href="/BenhNhan/TraCuu" class="btn btn-outline-primary mt-3">
+            Tra cứu lịch hẹn
+        </a>
+
+        <a href="/" class="btn btn-link mt-3 d-block">
+            Quay về trang chủ
+        </a>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+:root{
+    --bg:#f6f7fb;
+    --card:#ffffff;
+    --text:#111827;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --brand:#0d6efd;
+    --brand2:#0b5ed7;
+}
+
+.admin-body{background:var(--bg); color:var(--text)}
+.admin-wrap{min-height:100vh; display:flex}
+.admin-sidebar{
+    width:280px; flex:0 0 280px;
+    background:var(--card);
+    border-right:1px solid var(--line);
+    padding:18px 14px;
+    position:sticky; top:0; height:100vh;
+}
+.brand{display:flex; gap:12px; align-items:center; padding:10px 10px 14px; border-bottom:1px solid var(--line); margin-bottom:14px}
+.brand-icon{
+    width:44px; height:44px; border-radius:14px;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(13,110,253,.12); color:var(--brand);
+    font-size:22px;
+}
+.brand-title{font-weight:800; line-height:1.1}
+.brand-sub{font-size:12px; color:var(--muted); margin-top:2px}
+
+.sidebar-section{margin:14px 10px 8px; font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em}
+.sidebar-nav .nav-link{
+    display:flex; align-items:center; gap:10px;
+    padding:10px 12px;
+    border-radius:12px;
+    color:var(--text);
+    text-decoration:none;
+}
+.sidebar-nav .nav-link i{font-size:18px; color:#374151}
+.sidebar-nav .nav-link:hover{background:#f3f4f6}
+.sidebar-nav .nav-link.active{
+    background:rgba(13,110,253,.12);
+    color:var(--brand2);
+}
+.sidebar-nav .nav-link.active i{color:var(--brand2)}
+.sidebar-nav .sublink{padding-left:12px}
+
+.admin-main{flex:1; min-width:0; display:flex; flex-direction:column}
+.admin-topbar{
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+    padding:14px 18px;
+    display:flex; align-items:center; justify-content:space-between;
+    position:sticky; top:0; z-index:10;
+}
+.topbar-left{display:flex; align-items:center; gap:12px}
+.topbar-title{font-weight:800}
+
+.admin-content{padding:18px}
+.admin-footer{
+    padding:14px 18px;
+    color:var(--muted);
+    border-top:1px solid var(--line);
+    background:var(--card);
+    margin-top:auto;
+}
+
+@media (max-width: 991px){
+    .admin-sidebar{
+        position:fixed; left:-290px; top:0; z-index:50;
+        transition:all .2s ease;
+    }
+    .sidebar-open .admin-sidebar{left:0}
+    .sidebar-open::before{
+        content:""; position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:40;
+    }
+}
+.dashboard-card{border-radius:18px}
+.dash-icon{
+    width:54px;height:54px;border-radius:16px;
+    display:flex;align-items:center;justify-content:center;
+    background:#f3f4f6;
+    font-size:26px;
+}

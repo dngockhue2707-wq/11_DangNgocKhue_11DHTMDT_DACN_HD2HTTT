@@ -1,0 +1,22 @@
+@model dynamic
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-5" style="max-width:700px;">
+    <div class="card p-4 shadow">
+        <h3 class="text-center text-primary mb-3">PHIẾU KHÁM BỆNH</h3>
+
+        <p><strong>Số phiếu:</strong> @Model.PhieuKham</p>
+        <p><strong>Họ tên:</strong> @Model.HoTen</p>
+        <p><strong>Bác sĩ:</strong> @Model.TenBacSi</p>
+        <p><strong>Ngày đặt:</strong> @Model.NgayDat.ToString("dd/MM/yyyy HH:mm")</p>
+        <p><strong>Ngày khám:</strong> @Model.NgayKham.ToString("dd/MM/yyyy")</p>
+        <p><strong>Giờ khám:</strong> @Model.GioKham</p>
+        <p><strong>Lý do:</strong> @Model.LyDoKham</p>
+
+        <hr />
+
+        <a href="/DatLich/Index" class="btn btn-success">Đặt lịch mới</a>
+    </div>
+</div>

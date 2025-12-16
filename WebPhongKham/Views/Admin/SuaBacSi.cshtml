@@ -1,0 +1,39 @@
+@model WebPhongKham.Models.BacSi
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h3 class="text-center mb-4">SỬA BÁC SĨ</h3>
+
+    <form method="post" action="/Admin/SuaBacSi">
+        <input type="hidden" name="IdBacSi" value="@Model.IdBacSi" />
+
+        <div class="mb-3">
+            <label>Họ tên</label>
+            <input name="HoTen" value="@Model.HoTen" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Chuyên khoa</label>
+            <input name="ChuyenKhoa" value="@Model.ChuyenKhoa" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Kinh nghiệm</label>
+            <input type="number" name="KinhNghiem" value="@Model.KinhNghiem" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Hình ảnh</label>
+            <input name="HinhAnh" value="@Model.HinhAnh" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Mô tả</label>
+            <textarea name="MoTa" class="form-control">@Model.MoTa</textarea>
+        </div>
+
+        <button class="btn btn-success w-100">Lưu thay đổi</button>
+    </form>
+</div>

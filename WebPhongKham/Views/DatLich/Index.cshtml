@@ -1,0 +1,181 @@
+@model WebPhongKham.Models.ViewModels.DatLichViewModel
+@{
+    Layout = "_Layout";
+    var isUser = Context.Session.GetString("VaiTro") == "User";
+    var selectedGio = Model.Gio ?? "";
+}
+
+<div class="container mt-4" style="max-width: 800px;">
+    <h3 class="text-center mb-4">Đặt lịch khám bệnh</h3>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+
+    <form method="post">
+        <div class="card p-4 shadow-sm">
+
+            <h5 class="mb-3">Thông tin bệnh nhân</h5>
+
+            <div class="mb-3">
+                <label class="form-label">Họ tên</label>
+                <input class="form-control" name="HoTen"
+                       value="@Model.HoTen"
+                       @(isUser ? "readonly" : "") required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Số điện thoại</label>
+                <input class="form-control" name="SDT"
+                       value="@Model.SDT"
+                       @(isUser ? "readonly" : "") required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" name="Email"
+                       value="@Model.Email"
+                       @(isUser ? "readonly" : "") />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Địa chỉ</label>
+                <input class="form-control" name="DiaChi"
+                       value="@Model.DiaChi"
+                       @(isUser ? "readonly" : "") />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Giới tính</label>
+                <select class="form-select" name="GioiTinh" @(isUser ? "disabled" : "")>
+                    <option value="">-- Chọn giới tính --</option>
+                    <option value="Nam" selected="@(Model.GioiTinh == "Nam")">Nam</option>
+                    <option value="Nữ" selected="@(Model.GioiTinh == "Nữ")">Nữ</option>
+                    <option value="Khác" selected="@(Model.GioiTinh == "Khác")">Khác</option>
+                </select>
+                @if (isUser)
+                {
+                    <input type="hidden" name="GioiTinh" value="@Model.GioiTinh" />
+                }
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ngày sinh</label>
+                <input type="date" class="form-control"
+                       id="NgaySinh"
+                       name="NgaySinh"
+                       value="@Model.NgaySinh?.ToString("yyyy-MM-dd")"
+                       @(isUser ? "disabled" : "") />
+                @if (isUser)
+                {
+                    <input type="hidden" name="NgaySinh" value="@Model.NgaySinh?.ToString("yyyy-MM-dd")" />
+                }
+            </div>
+
+            <hr class="my-4" />
+            <h5 class="mb-3">Thông tin lịch hẹn</h5>
+
+            <div class="mb-3">
+                <label class="form-label">Bác sĩ</label>
+                <select name="IdBacSi" id="IdBacSi" class="form-select" required>
+                    <option value="">-- Chọn bác sĩ --</option>
+                    @foreach (var group in Model.DanhSachBacSi.GroupBy(x => x.ChuyenKhoa))
+                    {
+                        <optgroup label="@group.Key">
+                            @foreach (var bs in group)
+                            {
+                                if (bs.IdBacSi == Model.IdBacSi && Model.IdBacSi != 0)
+                                {
+                                    <option value="@bs.IdBacSi" selected>@bs.HoTen</option>
+                                }
+                                else
+                                {
+                                    <option value="@bs.IdBacSi">@bs.HoTen</option>
+                                }
+                            }
+                        </optgroup>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ngày khám</label>
+                <input type="date" name="Ngay" id="Ngay"
+                       class="form-control"
+                       value="@Model.Ngay?.ToString("yyyy-MM-dd")"
+                       required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Giờ khám</label>
+                <select name="Gio" id="Gio" class="form-select" required>
+                    <option value="">-- Chọn giờ --</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Lý do khám</label>
+                <textarea class="form-control" name="LyDoKham">@Model.LyDoKham</textarea>
+            </div>
+
+            <button class="btn btn-primary w-100 mt-3" type="submit">
+                Đặt lịch ngay
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+const homNay = new Date().toISOString().split('T')[0];
+const ns = document.getElementById("NgaySinh");
+if (ns) ns.max = homNay;
+
+const ngayInput = document.getElementById("Ngay");
+const today = new Date();
+const yyyy = today.getFullYear();
+const mm = String(today.getMonth() + 1).padStart(2, '0');
+const dd = String(today.getDate()).padStart(2, '0');
+ngayInput.min = `${yyyy}-${mm}-${dd}`;
+
+document.getElementById("IdBacSi").addEventListener("change", loadGio);
+document.getElementById("Ngay").addEventListener("change", loadGio);
+
+const selectedGio = "@selectedGio";
+
+function loadGio() {
+    const idBacSi = document.getElementById("IdBacSi").value;
+    const ngayRaw = document.getElementById("Ngay").value;
+
+    if (!idBacSi || !ngayRaw) return;
+
+    const ngay = new Date(ngayRaw).toISOString().split('T')[0];
+
+    fetch(`/DatLich/LayGioTheoBacSi?idBacSi=${idBacSi}&ngay=${ngay}`)
+        .then(res => res.json())
+        .then(data => {
+            const select = document.getElementById("Gio");
+            select.innerHTML = `<option value="">-- Chọn giờ --</option>`;
+
+            if (!data || data.length === 0) {
+                select.innerHTML += `<option disabled>Không có lịch làm việc</option>`;
+                return;
+            }
+
+            data.forEach(g => {
+                const opt = document.createElement("option");
+                opt.value = g;
+                opt.textContent = g;
+                if (selectedGio && g === selectedGio) opt.selected = true;
+                select.appendChild(opt);
+            });
+        })
+        .catch(() => {});
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById("IdBacSi").value && document.getElementById("Ngay").value) {
+        loadGio();
+    }
+});
+</script>

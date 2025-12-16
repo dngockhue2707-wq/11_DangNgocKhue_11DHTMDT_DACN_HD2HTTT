@@ -1,0 +1,68 @@
+@model List<WebPhongKham.Models.BacSi_NgayNghi>
+
+@{
+    Layout = "_AdminLayout";
+    var idBacSi = ViewBag.IdBacSi;
+}
+
+<div class="container mt-4">
+    <h3 class="mb-4">📅 Ngày nghỉ bác sĩ ID: @idBacSi</h3>
+
+    <div class="card p-4 shadow-sm mb-4">
+        <form asp-controller="Admin" asp-action="ThemNgayNghi" method="post">
+            <input type="hidden" name="idBacSi" value="@idBacSi" />
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label>Ngày nghỉ</label>
+                    <input type="date" name="ngay" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Ghi chú</label>
+                    <input name="ghichu" class="form-control" />
+                </div>
+
+                <div class="col-md-2 mb-3">
+                    <button type="submit" class="btn btn-primary w-100 mt-4">
+                        ➕ Thêm
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Ngày nghỉ</th>
+                <th>Ghi chú</th>
+                <th>Tác vụ</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var n in Model)
+            {
+                <tr>
+                    <td>@n.Id</td>
+                    <td>@n.Ngay.ToString("dd/MM/yyyy")</td>
+                    <td>@n.GhiChu</td>
+                    <td>
+                        <form asp-controller="Admin" asp-action="XoaNgayNghi" method="post"
+                              onsubmit="return confirm('Xóa ngày nghỉ này?');">
+                            <input type="hidden" name="id" value="@n.Id" />
+                            <input type="hidden" name="idBacSi" value="@idBacSi" />
+                            <button type="submit" class="btn btn-danger btn-sm">🗑 Xóa</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="Admin" asp-action="BacSi" class="btn btn-secondary mt-3">
+        ⬅ Quay lại danh sách bác sĩ
+    </a>
+</div>

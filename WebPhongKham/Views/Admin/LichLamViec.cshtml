@@ -1,0 +1,97 @@
+@model List<WebPhongKham.Models.BacSi_LichLamViec>
+
+@{
+    Layout = "_AdminLayout";
+    var idBacSi = ViewBag.IdBacSi;
+}
+
+<div class="container mt-4">
+    <h3 class="mb-4">🗓 Lịch làm việc bác sĩ ID: @idBacSi</h3>
+
+    <div class="card p-4 shadow-sm mb-4">
+        <form asp-controller="Admin" asp-action="ThemLichLamViec" method="post">
+            <input type="hidden" name="idBacSi" value="@idBacSi" />
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label>Thứ</label>
+                    <select name="thu" class="form-select" required>
+                        <option value="">-- Chọn --</option>
+                        <option value="2">Thứ 2</option>
+                        <option value="3">Thứ 3</option>
+                        <option value="4">Thứ 4</option>
+                        <option value="5">Thứ 5</option>
+                        <option value="6">Thứ 6</option>
+                        <option value="7">Thứ 7</option>
+                        <option value="8">Chủ nhật</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label>Giờ bắt đầu</label>
+                    <input type="time" name="gbd" class="form-control" required />
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label>Giờ kết thúc</label>
+                    <input type="time" name="gkt" class="form-control" required />
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <button type="submit" class="btn btn-primary w-100 mt-4">➕ Thêm</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Thứ</th>
+                <th>Giờ bắt đầu</th>
+                <th>Giờ kết thúc</th>
+                <th>Tác vụ</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var llv in Model)
+            {
+                <tr>
+                    <td>@llv.Id</td>
+                    <td>
+                        @{
+                            string txt = llv.ThuTrongTuan switch
+                            {
+                                2 => "Thứ 2",
+                                3 => "Thứ 3",
+                                4 => "Thứ 4",
+                                5 => "Thứ 5",
+                                6 => "Thứ 6",
+                                7 => "Thứ 7",
+                                8 => "Chủ nhật",
+                                _ => "?"
+                            };
+                        }
+                        @txt
+                    </td>
+                    <td>@llv.GioBatDau</td>
+                    <td>@llv.GioKetThuc</td>
+                    <td>
+                        <form asp-controller="Admin" asp-action="XoaLichLamViec" method="post"
+                              onsubmit="return confirm('Xóa ca làm việc này?');">
+                            <input type="hidden" name="id" value="@llv.Id" />
+                            <input type="hidden" name="idBacSi" value="@idBacSi" />
+                            <button type="submit" class="btn btn-danger btn-sm">🗑 Xóa</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="Admin" asp-action="BacSi" class="btn btn-secondary mt-3">
+        ⬅ Quay lại danh sách bác sĩ
+    </a>
+</div>

@@ -1,0 +1,45 @@
+@model WebPhongKham.Models.ViewModels.ChuyenKhoaViewModel
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+
+    <h2 class="text-center fw-bold mb-4">Danh sách bác sĩ</h2>
+
+    @if (Model.BacSis != null && Model.BacSis.Count > 0)
+    {
+        <div class="row">
+            @foreach (var bs in Model.BacSis)
+            {
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card doctor-card shadow-sm text-center p-3">
+
+                        <img src="~/images/@bs.HinhAnh"
+                             class="doctor-img mb-3"
+                             alt="@bs.HoTen" />
+
+                        <h5 class="doctor-name">@bs.HoTen</h5>
+
+                        <span class="doctor-specialty">@bs.ChuyenKhoa</span>
+
+                        <p class="doctor-exp">
+                            Kinh nghiệm: <strong>@bs.KinhNghiem năm</strong>
+                        </p>
+
+                        <a href="/BacSi/Details/@bs.IdBacSi"
+                           class="btn btn-outline-primary btn-sm w-100">
+                            Xem hồ sơ bác sĩ
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center">
+            Hiện chưa có bác sĩ nào.
+        </div>
+    }
+</div>

@@ -1,0 +1,35 @@
+@model WebPhongKham.Models.BacSi
+
+@{
+    ViewData["Title"] = "Hồ sơ bác sĩ";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">👨‍⚕️ Hồ sơ bác sĩ</h2>
+
+    <div class="card shadow p-4">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="@(string.IsNullOrEmpty(Model.HinhAnh) 
+    ? Url.Content("~/images/nam.jpg") 
+    : Url.Content("~/images/" + Model.HinhAnh))"
+     class="img-fluid rounded-circle"
+     style="max-width:200px; height:200px; object-fit:cover;" />
+
+            </div>
+
+            <div class="col-md-8">
+                <h4>@Model.HoTen</h4>
+                <p><strong>Chuyên khoa:</strong> @Model.ChuyenKhoa</p>
+                <p><strong>Kinh nghiệm:</strong> @Model.KinhNghiem năm</p>
+                <p><strong>Mô tả:</strong></p>
+                <p>@Model.MoTa</p>
+
+                <a href="/DatLich?bacSiId=@Model.IdBacSi" class="btn btn-success mt-2">
+                     Đặt lịch khám
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

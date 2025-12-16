@@ -1,0 +1,28 @@
+@model WebPhongKham.Models.TinTuc
+
+@{
+    ViewData["Title"] = Model.TieuDe;
+}
+
+<section class="py-5" style="background-color:#f5f7fb;">
+    <div class="container">
+        <a asp-action="Index" class="mb-3 d-inline-block" style="color:#2563eb;text-decoration:none;">← Quay lại danh sách</a>
+
+        <span class="d-inline-block mb-2 px-3 py-1 rounded-pill"
+              style="background:#e9f1ff;color:#1a3f8b;font-size:13px;">
+            @Model.LoaiTin
+        </span>
+
+        <h2 class="mb-2" style="font-weight:700;color:#111827;">
+            @Model.TieuDe
+        </h2>
+
+        <p class="text-muted mb-4" style="font-size:14px;">
+            Ngày đăng: @Model.NgayDang.ToString("dd/MM/yyyy")
+        </p>
+
+        <p style="font-size:16px;line-height:1.7;color:#374151;white-space:pre-line;">
+            @Model.NoiDung
+        </p>
+    </div>
+</section>

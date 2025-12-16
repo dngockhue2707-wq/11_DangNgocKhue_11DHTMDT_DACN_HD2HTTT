@@ -1,0 +1,31 @@
+@model List<SMS_Log>
+
+<h2 class="mb-3">📨 Hộp thư SMS</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>SĐT</th>
+            <th>Nội dung</th>
+            <th>Loại SMS</th>
+            <th>Mã lịch</th>
+            <th>Thời gian</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var sms in Model)
+{
+    <tr>
+        <td>@sms.Id</td>
+        <td>@sms.SoDienThoai</td>
+        <td>@sms.NoiDung</td>
+        <td>@sms.LoaiSMS</td>
+        <td>@sms.IdLichHen</td>
+        <td>@sms.NgayGui.ToString("dd/MM/yyyy HH:mm")</td>
+        <td>@sms.TrangThai</td>
+    </tr>
+}
+    </tbody>
+</table>

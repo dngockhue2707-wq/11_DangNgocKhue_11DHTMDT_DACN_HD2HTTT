@@ -1,0 +1,66 @@
+@model IEnumerable<WebPhongKham.Models.ViewModels.AdminNguoiDungVM>
+
+@{
+    Layout = "_AdminLayout";
+    var myId = Context.Session.GetInt32("UserId");
+}
+
+<h3 class="mb-3">Quản lý người dùng</h3>
+
+<table class="table table-bordered align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Vai trò</th>
+            <th>Trạng thái</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.HoTen</td>
+            <td>@item.Email</td>
+            <td>@item.VaiTro</td>
+            <td>
+                @if (item.TrangThai == 1)
+                {
+                    <span class="badge bg-success text-white">Hoạt động</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">Khóa</span>
+                }
+            </td>
+            <td>
+                @* ❌ Không cho khóa Admin hoặc tự khóa mình *@
+                @if (item.VaiTro == "Admin" || (myId.HasValue && item.Id == myId.Value))
+                {
+                    <button class="btn btn-sm btn-secondary" disabled>—</button>
+                }
+                else
+                {
+                    <form method="post"
+                          asp-action="DoiTrangThaiNguoiDung"
+                          asp-route-id="@item.Id"
+                          onsubmit="return confirm('Đổi trạng thái tài khoản này?');"
+                          style="display:inline">
+                        @if (item.TrangThai == 1)
+                        {
+                            <button class="btn btn-sm btn-secondary">Khóa</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-sm btn-success">Mở</button>
+                        }
+                    </form>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

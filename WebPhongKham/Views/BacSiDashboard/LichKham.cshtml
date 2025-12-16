@@ -1,0 +1,98 @@
+@model List<WebPhongKham.Models.LichHen>
+
+@{
+    Layout = "_Layout";
+    var ngay = ViewBag.Ngay as DateTime?;
+}
+
+<div class="container mt-4">
+    <h3 class="text-center mb-4">Lịch khám của tôi</h3>
+
+    <form method="get" class="row justify-content-center mb-4">
+        <div class="col-md-3">
+            <input type="date"
+                   class="form-control"
+                   name="ngay"
+                   value="@ngay?.ToString("yyyy-MM-dd")" />
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary w-100">Xem lịch</button>
+        </div>
+    </form>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            Không có lịch khám nào trong ngày này.
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-light">
+                <tr>
+                    <th>Giờ</th>
+                    <th>Bệnh nhân</th>
+                    <th>Trạng thái</th>
+                    <th>Lý do khám</th>
+                    <th>Tác vụ</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var lh in Model)
+                {
+                    <tr>
+                        <td>@lh.Gio</td>
+                        <td>BN @lh.IdBenhNhan</td>
+
+                        <td>
+                            <span class="badge 
+                                @(lh.TrangThai == "Đã đặt" ? "bg-primary" :
+                                  lh.TrangThai == "Đã khám" ? "bg-success" :
+                                  lh.TrangThai == "Đã hủy"  ? "bg-danger" : "bg-secondary")">
+                                @lh.TrangThai
+                            </span>
+                        </td>
+
+                        <td>@lh.LyDoKham</td>
+
+                        <td>
+                            @* Nếu lịch đã bị hủy *@
+                            @if (lh.TrangThai == "Đã hủy")
+                            {
+                                <span class="text-muted">Đã hủy</span>
+                            }
+                            @* Nếu lịch đã khám *@
+                            else if (lh.TrangThai == "Đã khám")
+                            {
+                                <span class="text-success fw-bold">Đã khám xong</span>
+                            }
+                            @* Nếu lịch đang ở trạng thái Đã đặt *@
+                            else
+                            {
+                                <div class="d-flex gap-2">
+
+                                    @* Nút ĐÃ KHÁM *@
+                                    <form method="post" action="/BacSiDashboard/DaKham">
+                                        <input type="hidden" name="idLichHen" value="@lh.IdLichHen" />
+                                        <button class="btn btn-success btn-sm">Đã khám</button>
+                                    </form>
+
+                                    @* Nút HỦY LỊCH *@
+                                    <form method="post" action="/BacSiDashboard/HuyLich"
+                                          onsubmit="return confirm('Bạn chắc chắn muốn hủy lịch này?');">
+                                        <input type="hidden" name="idLichHen" value="@lh.IdLichHen" />
+                                        <input class="form-control form-control-sm mb-1" 
+                                               name="lydo" placeholder="Lý do hủy" required />
+                                        <button class="btn btn-danger btn-sm w-100">Hủy lịch</button>
+                                    </form>
+                                </div>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

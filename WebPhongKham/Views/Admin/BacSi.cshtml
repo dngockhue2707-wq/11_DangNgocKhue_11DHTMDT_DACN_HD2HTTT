@@ -1,0 +1,176 @@
+@model List<WebPhongKham.Models.BacSi>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4" style="max-width: 1100px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="mb-0">Quản lý bác sĩ</h3>
+        <a href="/Admin/Dashboard" class="btn btn-outline-secondary btn-sm">⬅ Dashboard</a>
+    </div>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger py-2">@TempData["Error"]</div>
+    }
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success py-2">@TempData["Success"]</div>
+    }
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-header bg-white border-0 py-3">
+            <div class="fw-semibold">Thêm bác sĩ mới</div>
+        </div>
+
+        <div class="card-body">
+            <form method="post" action="/Admin/ThemBacSi">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Họ tên</label>
+                        <input name="HoTen" class="form-control" required />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Chuyên khoa</label>
+                        <input name="ChuyenKhoa" class="form-control" required />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Kinh nghiệm (năm)</label>
+                        <input type="number" min="0" name="KinhNghiem" class="form-control" required />
+                    </div>
+
+                    <div class="col-md-8">
+                        <label class="form-label">Hình ảnh (tên file / URL)</label>
+                        <input name="HinhAnh" class="form-control" placeholder="VD: bs1.jpg hoặc https://..." />
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Mô tả</label>
+                        <textarea name="MoTa" class="form-control" rows="3" placeholder="Mô tả ngắn về bác sĩ..."></textarea>
+                    </div>
+
+                    <div class="col-12 d-flex gap-2">
+                        <button class="btn btn-primary flex-fill" type="submit">Thêm bác sĩ</button>
+                        <button type="reset" class="btn btn-outline-secondary">Nhập lại</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">Danh sách bác sĩ</div>
+            <span class="badge bg-light text-dark">@((Model?.Count ?? 0)) bác sĩ</span>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th style="width:70px;">ID</th>
+                        <th>Họ tên</th>
+                        <th style="width:180px;">Chuyên khoa</th>
+                        <th style="width:140px;">Kinh nghiệm</th>
+                        <th style="width:260px;">Hình</th>
+                        <th style="width:220px;" class="text-center">Tác vụ</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @if (Model == null || Model.Count == 0)
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center py-4 text-muted">Chưa có bác sĩ nào.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        foreach (var bs in Model)
+                        {
+                            var img = (bs.HinhAnh ?? "").Trim();
+                            var isUrl = img.StartsWith("http://") || img.StartsWith("https://");
+                            var src = isUrl ? img : (string.IsNullOrWhiteSpace(img) ? "" : Url.Content("~/images/" + img));
+
+                            <tr>
+                                <td class="text-muted">@bs.IdBacSi</td>
+                                <td class="fw-semibold">@bs.HoTen</td>
+                                <td>@bs.ChuyenKhoa</td>
+                                <td>@bs.KinhNghiem năm</td>
+                                <td>
+                                    @if (!string.IsNullOrWhiteSpace(img))
+                                    {
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img class="bs-img" src="@src" alt="Hình bác sĩ"
+                                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+                                            <span class="text-muted" style="display:none;">Không thấy ảnh</span>
+                                            <div class="small text-muted text-truncate" style="max-width:170px;">@img</div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">-</span>
+                                    }
+                                </td>
+
+                                <td class="text-center">
+                                    <div class="action-group">
+                                        <a href="/Admin/SuaBacSi?id=@bs.IdBacSi" class="btn btn-outline-warning btn-sm">
+                                            Sửa
+                                        </a>
+
+                                        <a asp-controller="Admin" asp-action="NgayNghi" asp-route-idBacSi="@bs.IdBacSi"
+                                           class="btn btn-outline-secondary btn-sm">
+                                            Ngày nghỉ
+                                        </a>
+
+                                        <a asp-controller="Admin" asp-action="LichLamViec" asp-route-idBacSi="@bs.IdBacSi"
+                                           class="btn btn-outline-secondary btn-sm">
+                                            Lịch làm việc
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .action-group {
+        display: grid;
+        gap: 6px;
+        justify-items: stretch;
+    }
+
+    .action-group .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 600;
+        padding: 8px 10px;
+        line-height: 1.1;
+    }
+
+    .action-group form {
+        margin: 0;
+    }
+
+    .bs-img {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid #e5e7eb;
+        flex: 0 0 auto;
+    }
+</style>

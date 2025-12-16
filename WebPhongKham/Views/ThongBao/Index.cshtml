@@ -1,0 +1,37 @@
+@model List<WebPhongKham.Models.ThongBao>
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+    <h3 class="mb-4">🔔 Thông báo của bạn</h3>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            Bạn chưa có thông báo nào.
+        </div>
+    }
+    else
+    {
+        <div class="list-group">
+            @foreach (var tb in Model)
+            {
+                <div class="list-group-item d-flex justify-content-between align-items-start">
+
+                    <div>
+                        <b>@tb.NoiDung</b>
+                        <div class="text-muted small">
+                            📅 @tb.NgayTao.ToString("dd/MM/yyyy HH:mm")
+                        </div>
+                    </div>
+
+                    <span class="badge @(tb.DaDoc ? "bg-secondary" : "bg-danger")">
+                        @(tb.DaDoc ? "Đã đọc" : "Mới")
+                    </span>
+
+                </div>
+            }
+        </div>
+    }
+</div>
