@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebPhongKham")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acfba3f0ab7ff336a9ad8db7af3f62922f458d90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef2e5eee251b01da233a6f3d89ec1da1db81b72f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebPhongKham")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebPhongKham")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

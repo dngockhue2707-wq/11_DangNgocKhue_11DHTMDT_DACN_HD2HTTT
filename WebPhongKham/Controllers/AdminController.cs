@@ -20,9 +20,19 @@ namespace WebPhongKham.Controllers
             return HttpContext.Session.GetString("VaiTro") == "Admin";
         }
 
-        public async Task<IActionResult> Dashboard()
+        public async Task<IActionResult> Dashboard(string period = "month", int? year = null, int? month = null)
         {
             if (!CheckAdmin()) return RedirectToAction("Login", "Account");
+
+            var now = DateTime.Now;
+            var today = now.Date;
+
+            int selectedYear = year ?? now.Year;
+            int selectedMonth = month ?? now.Month;
+
+            ViewBag.Period = period;
+            ViewBag.SelectedYear = selectedYear;
+            ViewBag.SelectedMonth = selectedMonth;
 
             ViewBag.TongBenhNhan = await _context.BenhNhans.CountAsync();
             ViewBag.TongBacSi = await _context.BacSis.CountAsync();
@@ -49,22 +59,120 @@ namespace WebPhongKham.Controllers
                 ViewBag.TopSoLich = 0;
             }
 
-            var chart = await _context.LichHens.AsNoTracking()
-                .GroupBy(x => new { x.Ngay.Year, x.Ngay.Month })
-                .Select(g => new
-                {
-                    Year = g.Key.Year,
-                    Month = g.Key.Month,
-                    SoLich = g.Count()
-                })
-                .OrderBy(x => x.Year)
-                .ThenBy(x => x.Month)
-                .ToListAsync();
+            ViewBag.TongHomNay = await _context.LichHens.AsNoTracking()
+                .CountAsync(x => x.Ngay.Date == today);
 
-            ViewBag.ChartLabels = chart.Select(x => $"{x.Month:00}-{x.Year}").ToList();
-            ViewBag.ChartValues = chart.Select(x => x.SoLich).ToList();
+            ViewBag.TongDangChoHomNay = await _context.LichHens.AsNoTracking()
+                .CountAsync(x => x.Ngay.Date == today && x.TrangThai == "Đã đặt");
+
+            ViewBag.TongDaHuyHomNay = await _context.LichHens.AsNoTracking()
+                .CountAsync(x => x.Ngay.Date == today && x.TrangThai == "Đã hủy");
+
+            var yearList = await _context.LichHens.AsNoTracking()
+                .Select(x => x.Ngay.Year)
+                .Distinct()
+                .OrderByDescending(x => x)
+                .ToListAsync();
+            if (yearList.Count == 0) yearList.Add(now.Year);
+            ViewBag.YearList = yearList;
+
+            if (period == "week")
+            {
+                var start = StartOfWeek(today, DayOfWeek.Monday);
+                var end = start.AddDays(7);
+
+                ViewBag.TongTuanNay = await _context.LichHens.AsNoTracking()
+                    .CountAsync(x => x.Ngay >= start && x.Ngay < end);
+
+                var rows = await _context.LichHens.AsNoTracking()
+                    .Where(x => x.Ngay >= start && x.Ngay < end)
+                    .GroupBy(x => x.Ngay.Date)
+                    .Select(g => new { Day = g.Key, SoLich = g.Count() })
+                    .ToListAsync();
+
+                var labels = new List<string>();
+                var values = new List<int>();
+
+                for (int i = 0; i < 7; i++)
+                {
+                    var d = start.AddDays(i);
+                    labels.Add(d.ToString("dd/MM"));
+                    values.Add(rows.FirstOrDefault(r => r.Day == d)?.SoLich ?? 0);
+                }
+
+                ViewBag.ChartTitle = "Số lịch hẹn theo ngày (tuần này)";
+                ViewBag.ChartLabels = labels;
+                ViewBag.ChartValues = values;
+
+                return View();
+            }
+
+            if (period == "year")
+            {
+                var start = new DateTime(selectedYear, 1, 1);
+                var end = start.AddYears(1);
+
+                ViewBag.TongNam = await _context.LichHens.AsNoTracking()
+                    .CountAsync(x => x.Ngay >= start && x.Ngay < end);
+
+                var rows = await _context.LichHens.AsNoTracking()
+                    .Where(x => x.Ngay >= start && x.Ngay < end)
+                    .GroupBy(x => x.Ngay.Month)
+                    .Select(g => new { Month = g.Key, SoLich = g.Count() })
+                    .ToListAsync();
+
+                var labels = new List<string>();
+                var values = new List<int>();
+
+                for (int m = 1; m <= 12; m++)
+                {
+                    labels.Add($"T{m:00}");
+                    values.Add(rows.FirstOrDefault(r => r.Month == m)?.SoLich ?? 0);
+                }
+
+                ViewBag.ChartTitle = $"Số lịch hẹn theo tháng ({selectedYear})";
+                ViewBag.ChartLabels = labels;
+                ViewBag.ChartValues = values;
+
+                return View();
+            }
+
+            {
+                var start = new DateTime(selectedYear, selectedMonth, 1);
+                var end = start.AddMonths(1);
+
+                ViewBag.TongThang = await _context.LichHens.AsNoTracking()
+                    .CountAsync(x => x.Ngay >= start && x.Ngay < end);
+
+                var rows = await _context.LichHens.AsNoTracking()
+                    .Where(x => x.Ngay >= start && x.Ngay < end)
+                    .GroupBy(x => x.Ngay.Date)
+                    .Select(g => new { Day = g.Key, SoLich = g.Count() })
+                    .ToListAsync();
+
+                int days = DateTime.DaysInMonth(selectedYear, selectedMonth);
+                var labels = new List<string>();
+                var values = new List<int>();
+
+                for (int i = 1; i <= days; i++)
+                {
+                    var d = new DateTime(selectedYear, selectedMonth, i);
+                    labels.Add(d.ToString("dd/MM"));
+                    values.Add(rows.FirstOrDefault(r => r.Day == d)?.SoLich ?? 0);
+                }
+
+                ViewBag.ChartTitle = $"Số lịch hẹn theo ngày ({selectedMonth:00}/{selectedYear})";
+                ViewBag.ChartLabels = labels;
+                ViewBag.ChartValues = values;
+            }
 
             return View();
+        }
+
+        private static DateTime StartOfWeek(DateTime dt, DayOfWeek startOfWeek)
+        {
+            int diff = (7 + (dt.DayOfWeek - startOfWeek)) % 7;
+            return dt.AddDays(-diff).Date;
         }
 
         public async Task<IActionResult> BacSi()

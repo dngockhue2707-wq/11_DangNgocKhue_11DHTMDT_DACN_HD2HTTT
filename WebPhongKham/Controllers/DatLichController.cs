@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 using WebPhongKham.Data;
 using WebPhongKham.Models;
 using WebPhongKham.Models.ViewModels;
@@ -64,8 +65,7 @@ namespace WebPhongKham.Controllers
         {
             var gioList = new List<string>();
 
-            var thu = (int)ngay.DayOfWeek;
-            if (thu == 0) thu = 7;
+            var thu = (int)ngay.DayOfWeek + 1;
 
             var ca = await _context.BacSi_LichLamViecs
                 .AsNoTracking()
@@ -148,20 +148,47 @@ namespace WebPhongKham.Controllers
 
                 return RedirectToAction("PhieuKham", new { id = lh.IdLichHen });
             }
-            catch (DbUpdateException ex) when (ex.InnerException != null)
+            catch (DbUpdateException ex)
             {
-                var msg = ex.InnerException.Message ?? "";
+                var baseEx = ex.GetBaseException();
 
-                if (msg.Contains("Giờ này bác sĩ không làm việc"))
-                    ViewBag.Error = "Giờ này bác sĩ không làm việc. Vui lòng chọn giờ khác.";
-                else if (msg.Contains("ngày nghỉ") || msg.Contains("Bác sĩ nghỉ"))
-                    ViewBag.Error = "Bác sĩ không làm việc vào ngày này. Vui lòng chọn ngày khác.";
-                else if (msg.Contains("trùng") || msg.Contains("đã có lịch") || msg.Contains("đã được đặt"))
-                    ViewBag.Error = "Khung giờ này đã có người đặt hoặc bị trùng lịch. Vui lòng chọn giờ khác.";
-                else if (msg.Contains("bạn đã có lịch") || msg.Contains("đã đặt lịch"))
-                    ViewBag.Error = "Bạn đã có lịch hẹn trùng khung giờ này. Vui lòng chọn giờ khác.";
+                if (baseEx is SqlException sqlEx)
+                {
+                    if (sqlEx.Number == 2627 || sqlEx.Number == 2601)
+                    {
+                        ViewBag.Error = "Khung giờ này đã có người đặt hoặc bị trùng lịch. Vui lòng chọn giờ khác.";
+                    }
+                    else if (sqlEx.Number >= 50000)
+                    {
+                        if (sqlEx.Number == 50001)
+                            ViewBag.Error = "Giờ này bác sĩ không làm việc. Vui lòng chọn giờ khác.";
+                        else if (sqlEx.Number == 50002)
+                            ViewBag.Error = "Bác sĩ không làm việc vào ngày này. Vui lòng chọn ngày khác.";
+                        else if (sqlEx.Number == 50003)
+                            ViewBag.Error = "Bạn đã có lịch hẹn trùng khung giờ này. Vui lòng chọn giờ khác.";
+                        else
+                            ViewBag.Error = "Không thể đặt lịch: " + sqlEx.Message;
+                    }
+                    else
+                    {
+                        ViewBag.Error = "Không thể đặt lịch. Vui lòng kiểm tra lại thông tin và thử lại.";
+                    }
+                }
                 else
-                    ViewBag.Error = "Không thể đặt lịch. Vui lòng kiểm tra lại thông tin và thử lại.";
+                {
+                    var msg = (baseEx.Message ?? "").ToLowerInvariant();
+
+                    if (msg.Contains("giờ này bác sĩ không làm việc"))
+                        ViewBag.Error = "Giờ này bác sĩ không làm việc. Vui lòng chọn giờ khác.";
+                    else if (msg.Contains("ngày nghỉ") || msg.Contains("bác sĩ nghỉ"))
+                        ViewBag.Error = "Bác sĩ không làm việc vào ngày này. Vui lòng chọn ngày khác.";
+                    else if (msg.Contains("duplicate key") || msg.Contains("cannot insert duplicate") || msg.Contains("trùng") || msg.Contains("đã được đặt") || msg.Contains("đã có lịch"))
+                        ViewBag.Error = "Khung giờ này đã có người đặt hoặc bị trùng lịch. Vui lòng chọn giờ khác.";
+                    else if (msg.Contains("bạn đã có lịch") || msg.Contains("đã đặt lịch"))
+                        ViewBag.Error = "Bạn đã có lịch hẹn trùng khung giờ này. Vui lòng chọn giờ khác.";
+                    else
+                        ViewBag.Error = "Không thể đặt lịch. Vui lòng kiểm tra lại thông tin và thử lại.";
+                }
 
                 var vm = new DatLichViewModel
                 {

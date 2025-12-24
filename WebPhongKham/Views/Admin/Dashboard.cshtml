@@ -1,14 +1,105 @@
 @{
     Layout = "_AdminLayout";
     ViewData["Title"] = "Dashboard";
+
+    var period = (string)(ViewBag.Period ?? "month");
+    int selectedYear = (int)(ViewBag.SelectedYear ?? DateTime.Now.Year);
+    int selectedMonth = (int)(ViewBag.SelectedMonth ?? DateTime.Now.Month);
+    var yearList = ViewBag.YearList as List<int> ?? new List<int>();
+
+    var chartTitle = (string)(ViewBag.ChartTitle ?? "Số lịch hẹn");
 }
+
+<style>
+.dash-filter{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    background:#fff;
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:14px;
+    padding:10px 12px;
+    box-shadow:0 .25rem .75rem rgba(0,0,0,.04);
+}
+.dash-filter__left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+.dash-filter .btn-group .btn{
+    border-radius:10px;
+}
+.dash-filter select{
+    width:auto;
+    min-width:140px;
+    border-radius:12px;
+}
+.dash-filter__btn{
+    border-radius:12px;
+    padding:8px 14px;
+    white-space:nowrap;
+}
+@@media (max-width: 768px){
+    .dash-filter{
+        align-items:stretch;
+        flex-direction:column;
+    }
+    .dash-filter__btn{
+        width:100%;
+    }
+    .dash-filter select{
+        min-width:100%;
+    }
+}
+</style>
 
 <div class="container-fluid mt-2">
     <div class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-3">
         <div>
             <h3 class="fw-bold mb-1">Bảng điều khiển</h3>
-            <div class="text-muted">Theo dõi nhanh tình trạng hệ thống</div>
+            <div class="text-muted">Theo dõi nhanh tình trạng hệ thống & thống kê theo thời gian</div>
         </div>
+
+        <form method="get" class="dash-filter">
+            <div class="dash-filter__left">
+                <div class="btn-group btn-group-sm" role="group">
+                    <input type="radio" class="btn-check" name="period" id="pMonth" value="month" @(period=="month"?"checked":"")>
+                    <label class="btn btn-outline-primary" for="pMonth">
+                        <i class="bi bi-calendar3 me-1"></i>Tháng
+                    </label>
+
+                    <input type="radio" class="btn-check" name="period" id="pWeek" value="week" @(period=="week"?"checked":"")>
+                    <label class="btn btn-outline-primary" for="pWeek">
+                        <i class="bi bi-calendar-week me-1"></i>Tuần
+                    </label>
+
+                    <input type="radio" class="btn-check" name="period" id="pYear" value="year" @(period=="year"?"checked":"")>
+                    <label class="btn btn-outline-primary" for="pYear">
+                        <i class="bi bi-calendar2-range me-1"></i>Năm
+                    </label>
+                </div>
+
+                <select class="form-select form-select-sm" name="year" id="yearSelect">
+                    @foreach (var y in yearList)
+                    {
+                        <option value="@y" selected="@(y == selectedYear ? "selected" : null)">@y</option>
+                    }
+                </select>
+
+                <select class="form-select form-select-sm" name="month" id="monthSelect">
+                    @for (int m = 1; m <= 12; m++)
+                    {
+                        <option value="@m" selected="@(m == selectedMonth ? "selected" : null)">Tháng @m</option>
+                    }
+                </select>
+            </div>
+
+            <button class="btn btn-primary btn-sm dash-filter__btn" type="submit">
+                <i class="bi bi-funnel me-1"></i>Lọc
+            </button>
+        </form>
     </div>
 
     <div class="row g-3 mb-3">
@@ -50,13 +141,52 @@
     </div>
 
     <div class="row g-3 mb-3">
-        <div class="col-lg-5">
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <div class="fw-bold mb-2">Hôm nay</div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <div class="text-muted">Tổng lịch hẹn</div>
+                        <div class="fw-bold fs-5">@ViewBag.TongHomNay</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <div class="text-muted">Đang chờ (Đã đặt)</div>
+                        <div class="fw-bold fs-5">@ViewBag.TongDangChoHomNay</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <div class="text-muted">Đã hủy</div>
+                        <div class="fw-bold fs-5">@ViewBag.TongDaHuyHomNay</div>
+                    </div>
+
+                    <div class="mt-3">
+                        @if (period == "week")
+                        {
+                            <span class="badge bg-light text-dark border rounded-pill px-3 py-2">Tuần này: @ViewBag.TongTuanNay lịch</span>
+                        }
+                        else if (period == "year")
+                        {
+                            <span class="badge bg-light text-dark border rounded-pill px-3 py-2">Năm @selectedYear: @ViewBag.TongNam lịch</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-light text-dark border rounded-pill px-3 py-2">Tháng @selectedMonth/@selectedYear: @ViewBag.TongThang lịch</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
             <div class="card shadow-sm border-0 h-100">
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <div class="fw-bold">Bác sĩ có nhiều lịch nhất</div>
                         <span class="badge bg-warning text-dark rounded-pill px-3 py-2">Top</span>
                     </div>
+
                     <div class="fs-4 fw-bold">@ViewBag.TopBacSi</div>
                     <div class="text-muted mt-1">@ViewBag.TopSoLich lịch hẹn</div>
 
@@ -72,11 +202,37 @@
             </div>
         </div>
 
-        <div class="col-lg-7">
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <div class="fw-bold mb-2">Gợi ý nhanh</div>
+                    <div class="text-muted">Dùng bộ lọc để xem thống kê theo tuần / tháng / năm.</div>
+
+                    <div class="mt-3 d-grid gap-2">
+                        <a class="btn btn-outline-secondary rounded-3" asp-controller="Admin" asp-action="NguoiDung">
+                            <i class="bi bi-person-gear me-2"></i>Quản lý người dùng
+                        </a>
+                        <a class="btn btn-outline-secondary rounded-3" asp-controller="Admin" asp-action="DanhSachLich">
+                            <i class="bi bi-calendar2-check me-2"></i>Tra cứu lịch hẹn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3 mb-3">
+        <div class="col-12">
             <div class="card shadow-sm border-0">
                 <div class="card-body">
-                    <div class="fw-bold mb-2">Số lịch hẹn theo tháng</div>
-                    <canvas id="lichChart" height="120"></canvas>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+                        <div class="fw-bold">@chartTitle</div>
+                        <span class="badge bg-light text-dark border rounded-pill px-3 py-2" id="rangeBadge"></span>
+                    </div>
+
+                    <div style="height:340px">
+                        <canvas id="lichChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,22 +242,61 @@
 @section Scripts{
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+    const period = "@period";
+    const selectedYear = @selectedYear;
+    const selectedMonth = @selectedMonth;
+
     const labels = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ChartLabels));
     const dataValues = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ChartValues));
+
+    const monthSelect = document.getElementById("monthSelect");
+    const yearSelect = document.getElementById("yearSelect");
+
+    if (period === "week") {
+        monthSelect.disabled = true;
+        yearSelect.disabled = true;
+        monthSelect.classList.add("d-none");
+        yearSelect.classList.add("d-none");
+    } else if (period === "year") {
+        yearSelect.disabled = false;
+        monthSelect.disabled = true;
+        monthSelect.classList.add("d-none");
+        yearSelect.classList.remove("d-none");
+    } else {
+        yearSelect.disabled = false;
+        monthSelect.disabled = false;
+        monthSelect.classList.remove("d-none");
+        yearSelect.classList.remove("d-none");
+    }
+
+    const rangeBadge = document.getElementById("rangeBadge");
+    if (period === "week") rangeBadge.innerText = "Tuần này (T2 → CN)";
+    else if (period === "year") rangeBadge.innerText = "Năm " + selectedYear;
+    else rangeBadge.innerText = "Tháng " + selectedMonth + "/" + selectedYear;
+
     const ctx = document.getElementById('lichChart').getContext('2d');
 
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: labels,
+            labels,
             datasets: [{
                 label: 'Số lịch hẹn',
-                data: dataValues
+                data: dataValues,
+                borderWidth: 1,
+                borderRadius: 10
             }]
         },
         options: {
             responsive: true,
-            plugins: { legend: { display: true } }
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: true },
+                tooltip: { enabled: true }
+            },
+            scales: {
+                y: { beginAtZero: true, ticks: { precision: 0 } }
+            }
         }
     });
 </script>

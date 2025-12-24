@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj": {}
+    "D:\\HK1_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj": {}
   },
   "projects": {
-    "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj": {
+    "D:\\HK1_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj",
+        "projectUniqueName": "D:\\HK1_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj",
         "projectName": "WebPhongKham",
-        "projectPath": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj",
+        "projectPath": "D:\\HK1_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\WebPhongKham.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\HK2_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\obj\\",
+        "outputPath": "D:\\HK1_2025_nam4\\doanchuyennganh\\Webdatlich\\WebPhongKham\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
